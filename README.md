@@ -5,6 +5,10 @@ It's a baseline code for [Adversarial Attacks on Black-box Face Recognition](htt
 This code trains the white box on data from the black box model, makes iteration [FGSM attacks](https://arxiv.org/pdf/1412.6572.pdf) on the white box and makes submit zip archive.
 
 ## How to reproduce
+If you are using a version only for the CPU, then you need to import the module with the command
+```
+import MCS2018_CPU as MCS2018
+```
 |OS|python 2.7|python 3.5|python 3.6|
 |:-------:|:-------:|:-------:|:-------:|
 |Ubuntu| [CPU](http://mcs2018-competition.visionlabs.ru/distribs/ubuntu/MCS2018_CPU.so)<br/>[GPU(cuda8.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda8/ubuntu/MCS2018.so)<br/>[GPU(cuda9.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9/ubuntu/MCS2018.so)<br/>[GPU(cuda9.1)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.1/ubuntu/MCS2018.so)<br/>[GPU(cuda9.2)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.2/ubuntu/MCS2018.so)| [CPU](http://mcs2018-competition.visionlabs.ru/distribs/ubuntu/MCS2018_CPU.cpython-35m-x86_64-linux-gnu.so)<br/>[GPU(cuda8.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda8/ubuntu/MCS2018.cpython-35m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9/ubuntu/MCS2018.cpython-35m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.1)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.1/ubuntu/MCS2018.cpython-35m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.2)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.2/ubuntu/MCS2018.cpython-35m-x86_64-linux-gnu.so) | [CPU](http://mcs2018-competition.visionlabs.ru/distribs/ubuntu/MCS2018_CPU.cpython-36m-x86_64-linux-gnu.so)<br/>[GPU(cuda8.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda8/ubuntu/MCS2018.cpython-36m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.0)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9/ubuntu/MCS2018.cpython-36m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.1)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.1/ubuntu/MCS2018.cpython-36m-x86_64-linux-gnu.so)<br/>[GPU(cuda9.2)](http://mcs2018-competition.visionlabs.ru/distribs/cuda9.2/ubuntu/MCS2018.cpython-36m-x86_64-linux-gnu.so)|
@@ -12,6 +16,7 @@ This code trains the white box on data from the black box model, makes iteration
 |Windows| [CPU](http://mcs2018-competition.visionlabs.ru/distribs/windows/MCS2018_CPU.pyd) | [CPU](http://mcs2018-competition.visionlabs.ru/distribs/windows/MCS2018_CPU.cp35-win_amd64.pyd) | [CPU](http://mcs2018-competition.visionlabs.ru/distribs/windows/MCS2018_CPU.cp36-win_amd64.pyd) |
 |MacOS| [CPU](http://mcs2018-competition.visionlabs.ru/distribs/macos/MCS2018_CPU.so) | [CPU](http://mcs2018-competition.visionlabs.ru/distribs/macos/MCS2018_CPU.cpython-35m-darwin.so) | [CPU](http://mcs2018-competition.visionlabs.ru/distribs/macos/MCS2018_CPU.cpython-36m-darwin.so)
 
+[1M images list for student model](http://mcs2018-competition.visionlabs.ru/img_list_1M.csv) and [descriptors](http://mcs2018-competition.visionlabs.ru/img_descriptors_1M.npy)
 1. download black-box model and move to baseline director
 2. download [pair's data](http://mcs2018-competition.visionlabs.ru/imgs.zip), [student_model_imgs](http://mcs2018-competition.visionlabs.ru/student_model_imgs.zip), [submit list](http://mcs2018-competition.visionlabs.ru/submit_list.csv), [pairs list](http://mcs2018-competition.visionlabs.ru/pairs_list.csv) and move to data
 ```
