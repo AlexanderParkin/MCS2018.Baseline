@@ -14,6 +14,7 @@ from torchvision import transforms
 from tqdm import tqdm
 
 import MCS2018
+#import MCS2018_CPU as MCS2018 if you are using only CPU black-box model
 
 SSIM_THR = 0.95
 MEAN = [0.485, 0.456, 0.406]
