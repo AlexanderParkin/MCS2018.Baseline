@@ -13,6 +13,6 @@ PyWavelets==0.5.2
 scikit-image==0.13.1
 scipy==1.1.0
 six==1.11.0
-torch==0.4.0
+torch==0.3.1
 torchvision==0.2.1
 tqdm==4.23.3
