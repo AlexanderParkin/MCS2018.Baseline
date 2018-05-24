@@ -1,6 +1,7 @@
 '''
 Prepare data for student model learning
 '''
+import MCS2018
 
 import os
 import argparse
@@ -11,8 +12,6 @@ from PIL import Image
 from tqdm import tqdm
 from torchvision import transforms
 import glob
-
-import MCS2018
 
 MEAN = [0.485, 0.456, 0.406]
 STD = [0.229, 0.224, 0.225]
