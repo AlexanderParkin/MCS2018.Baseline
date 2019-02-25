@@ -55,4 +55,4 @@ python evaluate.py --attack_root ./baseline1/ --target_dscr ./data/val_descripto
 Black-box architecture is Resnet Caffe34 (student_net_learning/models/resnet_caffe.py)
 |Model|Dataset|Loss|Weight|
 |:-------:|:-------:|:-------:|
-|Resnet Caffe34|[CASIA-WebFace](https://arxiv.org/pdf/1411.7923.pdf)|[SphereFace](https://arxiv.org/abs/1704.08063)|[Google Drive](https://drive.google.com/file/d/1SUjfm4SUX8Fknlhek0ey1H1cVJsprIMK/view?usp=sharing)|
+| Resnet Caffe34 | [CASIA-WebFace](https://arxiv.org/pdf/1411.7923.pdf) | [SphereFace](https://arxiv.org/abs/1704.08063) | [Google Drive](https://drive.google.com/file/d/1SUjfm4SUX8Fknlhek0ey1H1cVJsprIMK/view?usp=sharing) |
